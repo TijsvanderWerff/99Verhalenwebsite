@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icon op de cards link -->
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <title>Inloggen</title>
+</head>
+
+<body>
+    <header class="top-bar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="img/nslogo.svg" alt="Terug naar homepage"></a>
+                </li>
+                <li>
+                    <a href="leeslijst.html"><img src="img/leeslijst.svg" alt="Mijn leeslijst"></a>
+                </li>
+                <li>
+                    <a href="inlog-aanmelden.html"><img src="img/profile.svg" alt="Inloggen"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="inloggen-container">
+        <h1>Log in bij uw NS-account</h1>
+        <form>
+            <fieldset>
+                <legend>Inloggen</legend>
+                <label for="emailadres">Emailadres</label>
+                <input type="email" name="emailadres" placeholder="gebruiker@mail.nl" id="emailadres" required>
+                <label for="wachtwoord">Wachtwoord</label>
+                <input type="password" name="password" id="wachtwoord" required>
+                <button type="submit" value="confirm" formaction="index.html">Inloggen</button> <a href="registreren.html" id="registreren-link">Nog geen account? Maak een account aan</a> </fieldset>
+        </form>
+    </div>
+
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>

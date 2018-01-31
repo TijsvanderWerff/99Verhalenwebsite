@@ -1,0 +1,160 @@
+/*=======================================================================*/
+/*=== Generic styling ===*/
+
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt|Special+Elite");
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body {
+    background-color: #feed01;
+}
+
+.verhaal-container h1 {
+    display: none;
+}
+
+
+.paranoia-header1 {
+    position: relative;
+    width: 100%;
+    margin-top: 4em;
+}
+
+.paranoia-header2 {
+    display: none;
+}
+
+p span.hightlight {
+    font-family: 'Rock Salt', cursive;
+}
+
+section.verhaal-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64em;
+}
+
+section.verhaal-container p {
+    background-color: #fff;
+    border: solid black 2em;
+    font-family: 'Special Elite';
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0.5em;
+    padding: 2em;
+}
+
+section.verhaal-container p span {
+    display: block;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    padding-left: 0.3em;
+    transition: all .2s ease-in-out;
+}
+
+section.verhaal-container p span:hover {
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+}
+
+section.verhaal-container p:nth-child(2) {
+    background-image: url(../img/paranoia/letter_p.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.verhaal-container p:nth-child(3) {
+    background-image: url(../img/paranoia/letter_a1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.verhaal-container p:nth-child(4) {
+    background-image: url(../img/paranoia/letter_r.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.verhaal-container p:nth-child(5) {
+    background-image: url(../img/paranoia/letter_a2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.verhaal-container p:nth-child(6) {
+    background-image: url(../img/paranoia/letter_n.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.verhaal-container p:nth-child(7) {
+    background-image: url(../img/paranoia/letter_o.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.verhaal-container p:nth-child(8) {
+    background-image: url(../img/paranoia/letter_i.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.verhaal-container p:nth-child(9) {
+    background-image: url(../img/paranoia/letter_a3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*=======================================================================*/
+/*Breakpoints*/
+
+@media all and (min-width: 40em) {
+    body.paranoia-header1 {
+        display: block;
+        width: 100%;
+    }
+
+    body.paranoia-header2 {
+        display: none;
+    }
+
+    section.verhaal-container {
+        border-top: solid black 2em;
+    }
+
+    section.verhaal-container {
+        margin-left: auto;
+        margin-right: auto;
+         max-width: 64em;
+    }
+}
+
+@media all and (min-width: 70em) {
+    section.verhaal-container {
+        border-left: black solid 3em;
+        border-right: black solid 3em;
+        padding: 2em;
+    }
+    .paranoia-header1 {
+        float: left;
+        position: absolute;
+        top: 20em;
+        transform: rotate(270deg);
+        width: 35em;
+        z-index: -1;
+    }
+    .paranoia-header2 {
+        display: flex;
+        float: right;
+        left: 50em;
+        position: sticky;
+        top: 20em;
+        transform: rotate(90deg);
+        width: 35em;
+        z-index: -1;
+    }
+    section.verhaal-container {
+        background-color: #feed01;
+        margin-top: 4em;
+    }
+}

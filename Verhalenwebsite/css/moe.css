@@ -1,0 +1,158 @@
+/*font imports*/
+
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:700');
+
+/*=======================================================================*/
+/*=== Generic styling ===*/
+
+body {
+    background: -webkit-gradient(linear, left bottom, left top, from(#274046), to(#E6DADA));
+    background: -webkit-linear-gradient(bottom, #274046, #E6DADA);
+    background: -moz-linear-gradient(bottom, #274046, #E6DADA);
+    background: -o-linear-gradient(bottom, #274046, #E6DADA);
+    background: linear-gradient(to top, #274046, #E6DADA);
+}
+
+section.verhaal-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 35em;
+    padding: 1em;
+    margin-top: 4em;
+}
+
+section img {
+    margin: 1em 0 1em;
+    width: 100%;
+}
+
+section p {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+
+section.verhaal-container h1 {
+    display: none;
+}
+
+section.verhaal-container div {
+    display: block;
+    font-size: 1em;
+    position: relative;
+}
+
+
+/*=======================================================================*/
+/*Styling animated letters*/
+/*bron: https://codepen.io/bernardo/pen/ugApF */
+
+span {
+    color: #e6dada;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    margin: 0.2em;
+    -webkit-perspective: 25em;
+    perspective: 25em;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+
+
+
+section.verhaal-container div:last-of-type span {
+    color: #e6dada;
+    display: inline-block;
+    font-size: 1.6em;
+    font-weight: 900;
+    margin: 0.2em;
+    padding-bottom: 2em;
+    perspective: 25em;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;transform-style: preserve-3d;
+    z-index: 1;
+}
+
+span.buttontekst {
+    font-size: 1em;
+    font-family: "NS Sans", sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+}
+
+/*=======================================================================*/
+/*breakpoints*/
+
+@media all and (min-width: 70em) {
+    section.verhaal-container div:last-of-type span {
+       color: #fff;
+       display: inline-block;
+       font-size: 3em;
+       font-weight: 900;
+       margin: 0.2em;
+       padding-bottom: 2em;
+       perspective: 25em;
+       position: relative;
+       transform-style: preserve-3d;
+       -webkit-transform-style: preserve-3d;
+       transform-style: preserve-3d;
+       z-index: 1;
+   }
+
+   span:before,
+   span:after {
+       content: attr(data-letter);
+       left: 0;
+       position: absolute;
+       top: 0;
+       -webkit-transform-origin: top left;
+       -ms-transform-origin: top left;
+       transform-origin: top left;
+   }
+
+   span,
+   span:before,
+   span:after {
+       -webkit-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+       transition: all 0.3s ease-in-out;
+   }
+
+   span:before {
+       color: #e6dada;
+       text-shadow: -1px 0px 1px rgba(255, 255, 255, .8), 1px 0px 1px rgba(0, 0, 0, .8);
+       transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+       -webkit-transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+       transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+       z-index: 2;
+   }
+
+   span:after {
+       color: rgba(0, 0, 0, .11);
+       transform: scale(1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 1deg);
+       -webkit-transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+       transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+       z-index: 1;
+   }
+
+   span:hover:before {
+       color: #274046;
+       -webkit-transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+       transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+   }
+
+   span:hover:after {
+       transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
+       -webkit-transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+       transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+   }
+}
+

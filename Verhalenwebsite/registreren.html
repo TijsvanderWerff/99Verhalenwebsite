@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icon op de cards link -->
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <title>Registreren</title>
+</head>
+
+<body>
+    <header class="top-bar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="img/nslogo.svg" alt="Terug naar homepage"></a>
+                </li>
+                <li>
+                    <a href="leeslijst.html"><img src="img/leeslijst.svg" alt="Mijn leeslijst"></a>
+                </li>
+                <li>
+                    <a href="inlog-aanmelden.html"><img src="img/profile.svg" alt="Inloggen"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="registreren-container">
+        <h1>Maak hier een NS-account</h1>
+           <form>
+            <fieldset>
+                <legend>NS-account maken</legend>
+                <label for="voornaam">Voornaam</label>
+                <input type="text" name="voornaam" id="voornaam" required>
+                <label for="achternaam">Achternaam</label>
+                <input type="text" name="achternaam" id="achternaam" required>
+                <label for="emailadres">Emailadres</label>
+                <input type="email" name="emailadres" placeholder="gebruiker@mail.nl" id="emailadres" required>
+                <label for="maak-wachtwoord">Wachtwoord</label>
+                <input type="password" name="password" id="maak-wachtwoord" required>
+                <label for="herhaal-wachtwoord">Herhaal wachtwoord</label>
+                <input type="password" name="password" id="herhaal-wachtwoord" required>
+                <label for="favoriet-genre">Favoriete genre</label>
+                <select name="favoriet-genre" id="favoriet-genre">
+                    <option value="Fictie">Fictie</option>
+                    <option value="Non-Fictie">Non-fictie</option>
+                    <option value="Media">Media</option>
+                    <option value="Geschiedenis">Geschiedenis</option>
+                    <option value="Politiek">Politiek</option>
+                    <option value="Interviews">Interviews</option>
+                    <option value="Sport">Sport</option>
+                </select>
+                <button type="submit" value="confirm" formaction="index.html">Registreren</button>
+            </fieldset>
+        </form>
+    </div>
+    </body>

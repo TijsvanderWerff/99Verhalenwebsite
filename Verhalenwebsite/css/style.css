@@ -1,0 +1,960 @@
+/*CSS bestand NS verhalen website, Tijs van der Werff, 500757047 */
+
+
+/*=======================================================================*/
+/*=== Generic styling ===*/
+/*=======================================================================*/
+
+@font-face {
+    font-family: NS Sans;
+    src: url("../fonts/nssans__-webfont.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 230, 233);
+    font-family: "NS Sans", Segoe UI, Myriad, Verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1.5625rem;
+    margin: 0;
+}
+
+h1.pagetitle {
+    color: rgb(0, 48, 130);
+    font-family: "NS Sans", sans-serif;
+    font-weight: 300;
+    font-size: 2.375rem;
+    line-height: 2.8125rem;
+    text-align: center;
+    padding: 0 0.4em 0 0.4em;
+}
+
+h2 {
+    color: rgb(0, 48, 130);
+    font-weight: 400;
+    margin: 1rem;
+}
+
+h3 {
+    color: rgb(0, 48, 130);
+    font-weight: 400;
+}
+
+p {
+    font-size: 1em;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+a:link {
+    transform: scale(1.02);
+    transition-duration: 0.4s;
+}
+
+a:hover,
+a:focus {
+    transform: scale(1.02);
+    transition-duration: 0.4s;
+}
+
+a:active {
+    transform: scale(0.95);
+    transition-duration: 0.2s;
+}
+
+
+/*=======================================================================*/
+/*== Navigatiebalk styling ==*/
+
+header {
+    box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    background-color: #fff;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    max-width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0.3em 0.5em;
+    align-self: center;
+}
+
+nav ul li:nth-child(2) {
+    margin-left: auto;
+}
+
+nav li:first-of-type {
+    align-self: center;
+    margin-top: 0.7em;
+}
+
+ul li img.leeslijst {
+    height: 22px;
+    width: auto;
+}
+
+
+picture img {
+    height: auto;
+    margin-top: 3em;
+    width: 100%;
+}
+
+/*=======================================================================*/
+/*==Card styling ==*/
+
+
+/* card css */
+
+main article .wrapper {
+    background-color: #000;
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+    min-height: 20em;
+    overflow: hidden;
+    position: relative;
+}
+
+main article p {
+    float: left;
+    height: 4.375em;
+    margin: 0.5em
+}
+
+main article {
+    display: flex;
+    flex-direction: column-reverse;
+    float: left;
+    padding: 0 1.7rem;
+    width: 100%;
+}
+
+main article ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+article ul li {
+    display: inline-block;
+}
+
+article ul a {
+    color: #fff;
+}
+
+article ul span {
+    font-family: 'Open Sans';
+    font-size: 0.625em;
+    font-weight: 700;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 0);
+}
+
+article header {
+    margin: 0 0.5em 0 0.5em;
+    padding-top: 1.5em;
+}
+
+
+/* Element positioning within the card*/
+
+article,
+article header h3 {
+    margin-top: 0.625em;
+}
+
+article div.wrapper:hover ul span {
+    opacity: 1;
+    transform: translate(-50%, -1.2em);
+}
+
+main article footer {
+    color: #fff;
+    padding: 1em;
+}
+
+article footer::before,
+article footer::after {
+    content: '';
+    display: table;
+}
+
+article footer::after {
+    clear: both;
+}
+
+article footer p {
+    float: left;
+    font-size: 0.750em;
+}
+
+article ul {
+    float: right;
+}
+
+article ul li {
+    margin: 0 0.313em;
+    position: relative;
+}
+
+article ul span {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+main article .animation {
+    color: #fff;
+    transform: translateY(8.375em);
+}
+
+article h3 a {
+    color: #fff;
+    padding-left: 0.4em;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+
+/* Readmore link */
+
+a.leesverder {
+    color: #fff;
+    font-size: 0.750em;
+    font-weight: 700;
+    line-height: 1;
+    margin: 2em auto 1em;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*Card background-images*/
+
+article .verhaal-1 {
+    background: url("../img/background-images-card/background-image_paranoia.png") center/cover no-repeat;
+}
+
+article .verhaal-2 {
+    background: url("../img/background-images-card/background-image_hongerwinter.png") center/cover no-repeat;
+}
+
+article .verhaal-3 {
+    background: url("../img/background-images-card/background-image_moe.png") center/cover no-repeat;
+}
+
+article .verhaal-4 {
+    background: url("./img/verhaal-img.jpg") center/cover no-repeat;
+}
+
+article .verhaal-5 {
+    background: url("./img/verhaal-img.jpg") center/cover no-repeat;
+}
+
+article .verhaal-6 {
+    background: url("./img/verhaal-img.jpg") center/cover no-repeat;
+}
+
+
+/*=======================================================================*/
+/*== Form styling ==*/
+
+form.zoek-formulier {
+    max-width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zoek-formulier fieldset,
+fieldset {
+    border: none;
+}
+
+.zoek-formulier legend {
+    padding-top: 0.5em;
+}
+
+.zoek-formulier {
+    padding-top: 0.5em;
+}
+
+input[type="text"] {
+    padding: 1em;
+    border: none;
+}
+
+input[type="text"]:focus {
+    transform: scale(1.01);
+    transition-duration: 0.2s;
+}
+
+label {
+    color: #003082;
+    display: block;
+    font-weight: 400;
+    padding: 0.625rem 0 0.625rem;
+}
+
+fieldset button,
+input[name="results"] {
+    background-color: #0079d3;
+    border: none;
+    box-shadow: inset 0 -.125rem 0 #005ca0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 2.8125rem;
+    line-height: 1.5625rem;
+    margin: 0.09rem;
+    overflow: hidden;
+    padding: .625rem 1.125rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .15s ease-in-out;
+    vertical-align: top;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button[type="button"] {
+    background-color: rgb(230, 181, 23);
+    border: none;
+    box-shadow: 0 -0.125rem 0 #cfa317 inset;
+    color: rgb(0, 48, 130);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 2.8125rem;
+    line-height: 1.5625rem;
+    margin: 0.09rem;
+    overflow: hidden;
+    padding: .625rem 1.125rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .15s ease-in-out;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+fieldset button:hover
+ {
+    box-shadow: inset 0 -3.125rem 0 #005ca0;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button[type="button"]:hover {
+    box-shadow: 0 -0.125rem 0 #cfa317 inset;
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+    color: rgb(0, 48, 130);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input[name="results"]:hover {
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+}
+
+input[name="results"]:active,
+button[type="button"]:active {
+    transform: scale(0.98);
+    transition-duration: 0.2s;
+}
+
+div.inloggen-container,
+div.comment-container,
+.registreren-container {
+    background-color: rgb(255, 255, 255);
+    margin: 4rem 0.75rem 0 0.75rem;
+    padding: 0.1rem;
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.inloggen-container h1,
+div.registreren-container h1 {
+    color: rgb(0, 48, 130);
+    font-family: "NS Sans", sans-serif;
+    font-weight: 300;
+    font-size: 2.375rem;
+    line-height: 2.8125rem;
+}
+
+button[value="confirm"] {
+    display: block;
+}
+
+button[value="confirm"]:active {
+    transform: scale(0.95);
+    transition-duration: 0.2s;
+}
+
+button[type="submit"] {
+    background: url(../img/arrow_white.svg) #0079d3 no-repeat 94% center;
+    padding-right: 2.9375rem;
+}
+
+button[type="submit"]:active{
+    background: url(../img/arrow_white.svg) #0079d3 no-repeat 94% center;
+    padding-right: 2.9375rem;
+    transform: scale(0.95);
+    transition-duration: 0.2s;
+}
+
+select[name="favoriet-genre"] {
+    padding: 1em;
+}
+
+div h1 {
+    margin: 0.625rem 0 0.625rem 1rem;
+    padding-top: 0.5rem;
+}
+
+form {
+    margin: 1em;
+    background-color: rgb(255, 201, 23);
+    padding-top: 1em;
+}
+
+.inloggen-container fieldset,
+.registreren-container fieldset,
+.share-container {
+    border: none;
+    padding: 0.5rem 1rem 1rem 1.5625rem;
+}
+
+fieldset button {
+    margin-top: 1rem;
+}
+
+fieldset a {
+    border-bottom-color: rgba(7, 7, 33, 0.1);
+    border-bottom-style: solid;
+    border-bottom-width: 0.125rem;
+    color: rgb(0, 48, 130);
+    display: inline-block;
+    line-height: 1.5625rem;
+    margin: 1rem 0;
+    padding-bottom: 0.5625rem;
+}
+
+fieldset a:hover {
+    border-bottom-color: rgb(0, 121, 211);
+}
+
+legend {
+    color: rgb(0, 48, 130);
+    font-size: 1.25rem;
+    margin: 0.625rem 0 0;
+}
+
+label {
+    color: rgb(0, 48, 130);
+    font-size: 1em;
+    line-height: 1.5625rem;
+    margin-top: 1rem;
+    padding-top: 0.5625rem;
+}
+
+input {
+    padding: 1rem;
+    width: 100%;
+}
+
+.inloggen-container input:focus,
+.registreren input:focus,
+input[name="voornaam"]:focus,
+input[name="achternaam"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+
+.inloggen-container input:valid,
+.registreren input:valid,
+input[name="voornaam"]:valid,
+input[name="achternaam"]:valid,
+input[type="password"]:valid,
+input[type="email"]:valid{
+    border-bottom-color: lightgreen;
+    border-bottom-style: solid;
+    border-bottom-width: 0.25rem;
+}
+
+input:invalid {
+    border-bottom-color: rgb(219, 0, 41);
+    border-bottom-style: solid;
+    border-bottom-width: 0.25rem;
+}
+
+
+/*=======================================================================*/
+/*===Commentsection===*/
+
+textarea {
+    border: none;
+    display: flex;
+    height: 15rem;
+    padding: 1rem;
+    resize: vertical;
+    width: 100%;
+}
+
+section.comment form {
+    background-color: rgb(255, 201, 23);
+    height: 23.5em;
+/*    HEIGHTHEIGHT*/
+}
+
+section.comment {
+    background-color: #fff;
+    display: block;
+    padding: 1rem;
+    z-index: 4;
+}
+
+div.comment-container {
+    width: 100%;
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*BEGIN*/
+
+section.commentListHide {
+    display: none;
+}
+
+section.commentList {
+    background-color: rgb(230, 230, 233);
+    margin: 1em;
+    padding: 0.5em;
+    display: block;
+    opacity: 1;
+    animation: fadeIn 1.5s linear;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+section.commentList div {
+    display: flex;
+    flex-direction: row;
+}
+
+section.commentList h3 {
+    width: 100%;
+    padding: 0.5em 1em 0 1em;
+}
+
+section.commentList p {
+    display: inline-block;
+    margin: 1em 1em;
+    align-self: center;
+}
+
+section.commentList img {
+    margin-left: 1em;
+    float: left;
+    height: 4em;
+    width: 4em;
+    border-radius:50%;
+    align-self: center;
+}
+
+/*END*/
+
+div.share-container {
+    background-color: #fff;
+    display: block;
+    margin: 1em;
+    max-width: 64em;
+}
+
+button.facebook,
+button.twitter,
+button.google {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 2.8125rem;
+    line-height: 1.5625rem;
+    margin: 0.09rem;
+    overflow: hidden;
+    padding: .625rem 1.125rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .15s ease-in-out;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+button.facebook {
+    background-color: rgb(59, 89, 152);
+}
+
+button.twitter {
+    background-color: rgb(0, 205, 255);
+}
+
+button.google {
+    background-color: rgb(210, 66, 40);
+}
+
+button.facebook:hover {
+    box-shadow: inset 0 -3.125rem 0 #314A7F;
+}
+
+button.twitter:hover {
+    box-shadow: inset 0 -3.125rem 0 #00B7E6;
+}
+
+button.google:hover {
+    box-shadow: inset 0 -3.125rem 0 #B93A23;
+}
+
+button.google:active,
+button.facebook:active,
+button.twitter:active {
+    transform: scale(0.95);
+    transition-duration: 0.2s;
+}
+
+/*=======================================================================*/
+/*Microinteracties classToggle*/
+/*Microinteractie 1 */
+
+form button.selected {
+        animation: tagAnimation 1s;
+        background-color: red;
+        background: url(../img/cross_.svg) #0079d3 no-repeat 94% center;
+        transition-duration: 2s;
+        padding-right: 2.9375rem;
+        color: #fff;
+        float: left;
+        margin-right: 0.3em;
+}
+
+form button.selected:hover {
+    transition: background-color 0.5s ease;
+    background-color: rgb(219, 0, 41);
+    color: #fff;
+}
+@keyframes tagAnimation {
+    from {
+        background-color: #cfa317;
+    }
+    to {
+        background-color: #0079d3;
+    }
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-1.875rem);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(-0.9375rem);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*microinteractie 2*/
+
+button.likePulse {
+    animation: pulse 1s;
+    color: red;
+    background-color: red;
+    transition-duration: 1s;
+    border: none;
+}
+
+button.noLike {
+    background-color: transparent;
+    border: none;
+    color: red;
+}
+
+button.noLike span,
+button.likePulse span {
+    margin-top: 0.4em;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.8);
+    box-shadow: 0 0 0 0 rgba(229, 57, 53, 0.8);
+    border-radius: 50%;
+    transform: translateY(+1em)
+}
+
+10% {
+    transform: translateY(-0.2em);
+}
+
+30% {
+    transform: translateY(-0.1em);
+}
+
+40% {
+    transform: translateY(-0.2em);
+}
+
+70% {
+    -moz-box-shadow: 0 0 0 0.8em rgba(198, 40, 40, 0.6);
+    box-shadow: 0 0 0 0.8em rgba(198, 40, 40, 0.6);
+    border-radius: 50%;
+}
+
+100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    border-radius: 50%;
+}
+}
+
+/*Microinteractie 3*/
+
+button[type="button"].plaatsButton {
+    background-color: rgb(0, 121, 211);
+    border: none;
+    box-shadow: 0 -0.125rem 0 #cfa317 inset;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 3rem;
+    line-height: 1.5625rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    padding: .625rem 1.125rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .15s ease-in-out;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 5em;
+}
+
+fieldset .plaatsButton span {
+    position: absolute;
+    right: 1.1em;
+    top: 0.7em;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    align-content: center;
+}
+
+fieldset .plaatsButton.loading span {
+    display: none;
+}
+
+fieldset .plaatsButton.success span {
+    top: 3em;
+}
+
+fieldset .plaatsButton.success {
+    pointer-events: none;
+}
+
+fieldset .plaatsButton.loading {
+    height: 2em;
+    border-radius: 50%;
+    -webkit-animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
+    pointer-events: none;
+    background-image: url(../img/nslogo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+fieldset .plaatsButton:after{
+  position:absolute;
+  content:"✔";
+  font-size: 1em;
+  color: #fff;
+  display:block;
+  top:4em;
+  left:auto;
+  right: auto;
+  -webkit-transition:0.3s;
+  -o-transition:0.3s;
+  transition:0.3s;
+  -webkit-transition-delay:0.1s;
+       -o-transition-delay:0.1s;
+          transition-delay:0.1s;
+}
+
+fieldset .plaatsButton.success:after{
+  top: 0.7em;
+  left:2rem;
+}
+
+@keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+    height:3.75rem;
+  }
+    40% {
+    transform: translateY(-1.875rem);
+    height:4.25rem;
+  }
+    60% {
+    transform: translateY(-0.9375rem);
+        height:4.25rem;
+  }
+}
+
+/*==Breakpoints==*/
+
+@media all and (min-width: 40em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20%;
+        grid-column-gap: 0.05rem;
+        grid-row-gap: 1rem;
+    }
+    span.text {
+        display: inline-block;
+    }
+    picture img {
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+    section.comment form {
+        background-color: rgb(255, 201, 23);
+        max-width: 40em;
+    }
+    textarea {
+        border: none;
+        display: flex;
+        height: 15rem;
+        padding: 1rem;
+        resize: vertical;
+        width: 100%;
+        max-width: 64em;
+    }
+
+    button[type="button"].plaatsButton:hover {
+    box-shadow: inset 0 -3.125rem 0 #005ca0;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+}
+
+@media all and (min-width: 70em) {
+    main {
+        display: grid;
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 0.5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20%;
+        margin: auto;
+        max-width: 64em;
+    }
+    main article .wrapper:hover .animation {
+        transform: translateY(0);
+    }
+    main article .animation {
+        bottom: 0;
+        position: absolute;
+        transition: transform 0.3s;
+        width: 100%;
+    }
+    article header {
+        padding: 1em;
+        position: relative;
+        z-index: 1;
+    }
+    div.share-container {
+        background-color: #fff;
+        margin: 1em;
+    }
+    picture img {
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+    div.share-container {
+        background-color: #fff;
+        margin: 1em;
+    }
+
+    button[type="button"].plaatsButton:hover {
+    box-shadow: inset 0 -3.125rem 0 #005ca0;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+}
